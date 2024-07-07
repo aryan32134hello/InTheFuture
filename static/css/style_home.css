@@ -1,0 +1,216 @@
+.cont1{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+.body{
+    background-color: rgba(0, 0, 0, 0.89);
+    height: 86.3vh;
+    margin: -5px;
+    padding: 0;
+    border-radius: 50px 50px 0px 0px;
+}
+.brandtext{
+    color: black;
+    font-size: 22px;
+    margin-top: 3px;
+    font-weight: 500;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.home{
+    text-decoration: none; 
+    color: inherit;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    top: 0;
+    right: 0;
+    margin-right: 260px;
+    display: block;
+    margin-top: 5px;
+    position: absolute;
+}
+.contact{
+    text-decoration: none; 
+    color: inherit;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    top: 0;
+    right: 0;
+    margin-right: 70px;
+    display: block;
+    margin-top: 6px;
+    position: absolute;
+}
+.into{
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 110px;
+    font-family:"Suez One";
+    letter-spacing: 20px;
+}
+.future{
+    color: white;
+    text-align: center;
+    font-size: 90px;
+    margin-top: -80px;
+    font-family:"Suez One";
+    letter-spacing: 30px;
+}
+.desc1{
+    color: white;
+    text-align: center;
+    margin-top: -80px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.desc2{
+    color: white;
+    text-align: center;
+    margin-top: -10px;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.btn{
+    margin-left: 2%;
+    margin-top: 30px;
+    background-color: #FFFFFF;
+    color: black;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    width: 100px;
+    height: 35px;
+    border: none;
+    text-decoration: none;
+    border-radius: 30px;
+}
+.btn1{
+    margin-left: 42%;
+    background-color: #3562FF;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    width: 100px;
+    height: 35px;
+    border: none;
+    text-decoration: none;
+    border-radius: 35px;
+}
+.dropbtn {
+    background-color: #3562FF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 35px;
+    height: 35px;
+    width: 100px;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+  }
+  
+  .dropdown {
+    margin-left: 42%;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 95px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgba(0, 0, 0, 0.881);
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 13px;
+  }
+  
+.dropdown-content a:hover {background-color: #cdcdcd}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color: #3562FF;
+}
+
+.product_container {
+    position: absolute;
+    top: 0;
+    right: 170px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.product_btn {
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.product_container a:hover{
+    background-color: #cdcdcd
+}
+.product_content {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.product_content > a {
+    color: rgba(0, 0, 0, 0.881);
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+
+.product_content > a:hover {
+    background-color: #f1f1f1;
+}
+.product_container:hover{
+    background-color: transparent;
+}
+.product_container:hover .product_content {
+    display: flex;
+}
+.btm_text{
+    color: rgba(255, 255, 255, 0.819);
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    margin-bottom: 4px;
+    margin-left: 42%;
+    font-size: 14px;
+    font-weight: 200;
+}

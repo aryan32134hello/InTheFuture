@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "{{ url_for('static', filename='css/style_rag.css') }}" rel="stylesheet">
+    <title>RAG Chain Implementation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="child">
+            <form action="/submit" method="post">
+            <p id = "tag">ThinkBot</p>
+                <p class = "t1">Enter Website Link : </p>
+                <input type="text" id="website" name="website" class="inp i1"><br>
+                <p class = "t2 t1">Enter Your Question : </p>
+                <input type="text" id="question" name="question" class="inp i2"><br>
+            <button class="bt1" id = "bt1" type="submit">Submit</button>
+             </form>
+        </div>
+    </div>
+    <h2 id="answer"></h2>
+    <script>
+        document.getElementById("bt1").addEventListener('click',function(){
+            document.getElementById("answer").innerHTML = 'Waiting for answer!'
+        })
+        // const form = document.querySelector('form')
+        // form.onsubmit = async(e)=>
+    </script>
+    <script>
+        const form = document.querySelector('form')
+        form.onsubmit = async(e) => {
+            e.preventDefault();
+            const formdata = new FormData(form)
+            const response = await fetch('/submit',{
+                method : 'POST',
+                body : formdata
+            });
+            const result = await response.json()
+            document.getElementById("answer").innerHTML = result.ans
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--    <link rel="stylesheet" href="style.css">-->
+     <link href = "{{ url_for('static', filename='css/style_lang_trans.css') }}" rel="stylesheet">
+    <title>Translate Bot</title>
+</head>
+<body>
+    <div class="container">
+        <div class="child">
+            <form action="/translate" method="post">
+            <p id = "tag">Translate Bot</p>
+                <p class = "t1">Select Your Language: </p>
+                <select id="language" name = "language" id="lang" title="choose">
+                    <option value="French" name = "French">French</option>
+                    <option value="Hindi" name = "Hindi">Hindi</option>
+                    <option value="Bengali" name = "Bengali">Bengali</option>
+                </select>
+                <p class = "t2 t1">Enter Your Text Here : </p>
+                <input type="text" id="question" name="text" class="inp i2" title="text"><br>
+            <button class="bt1" id = "bt1" type="submit">Submit</button>
+             </form>
+        </div>
+    </div>
+    <h2 id="answer"></h2>
+    <script>
+        document.getElementById("bt1").addEventListener('click',function(){
+            document.getElementById("answer").innerHTML = 'Waiting for answer!'
+        })
+    </script>
+    <script>
+        const form = document.querySelector('form')
+        form.onsubmit = async(e) => {
+            e.preventDefault();
+            const formdata = new FormData(form)
+            const response = await fetch('/translate',{
+                method : 'POST',
+                body : formdata
+            });
+            const result = await response.json()
+            document.getElementById("answer").innerHTML = result.ans
+        };
+    </script>
+</body>
+</html>

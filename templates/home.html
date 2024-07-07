@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="./style_home.css"> -->
+    <link href = "{{ url_for('static', filename='css/style_home.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Suez+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class = "cont1">
+        <p class="brandtext">InTheFuture</p>
+        <a href="home.html" class = "home">Home</p></a>
+        <div class = "product_container" id = "myDropdown">
+            <button class = "product_btn">Products</button>
+            <div class = "product_content">
+                <a href="/thinkbot">ThinkBot</a>
+                <a href ="/thinkbotpdf">ThinkBotPDF</a>
+                <a href="/translatebot">TranslateBot</a>
+            </div>
+        </div>
+        <a href="contact.html" class = "contact">Contact Us</p></a>
+        <div class = "body">
+            <p class="into">Into the</p>
+            <p class="future">FUTURE</p>
+            <p class="desc1">Streamlining communication and knowledge access with cutting-edge AI.</p>
+            <p class="desc2">Transform daily challenges into curated experiences</p>
+            <div class="dropdown">
+                <button class="dropbtn">Products</button>
+                <div class="dropdown-content">
+                <a href="/thinkbot">ThinkBot</a>
+                <a href="/thinkbotpdf">ThinkBotPDF</a>
+                <a href="/translatebot">TranslateBot</a>
+                </div>
+              </div>
+            <a href="contact.html"><button class="btn">Contact Us</button></a>
+            <p class="btm_text">Copyright @2024|All rights reserved</p>
+        </div>
+    </div>
+</body>
+</html>
